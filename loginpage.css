@@ -1,0 +1,151 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body {
+  background-color: white;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-flow: column wrap;
+}
+header {
+  margin:90px auto 40px;
+  width:200px;
+  height:70px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.sova-logo {
+  margin:10px 0px 0px 30px;
+}
+h1 {
+  -webkit-text-stroke: 0.5px black;
+  color: royalblue;
+  font-size:42px;
+  font-style: normal;
+  font-family:Verdana;
+  
+}
+.login-section {
+  width:320px;
+  height:400px;
+  padding:10px;
+  margin:20px auto;
+  border-bottom: 3px solid black;
+  border-top: 3px solid royalblue;
+  border-right: 3px solid black;
+  border-left: 3px solid royalblue;
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  align-items: center;
+  flex-flow:column nowrap;
+  box-shadow:0.5px 0.5px 2px 0.5px rgba(36, 37, 41, 1);
+  border-radius:20px;
+  animation: colorChange 1s linear 2s 1 alternate both;
+  background-color:rgba(255, 255, 255, 1);
+}
+.login-section:hover {
+  animation-play-state: paused;
+}
+@keyframes colorChange {
+  from {
+  box-shadow: 1px 1px 2px 1px rgba(36, 37, 41, 1);
+  transform: scale(1);
+  border-bottom: 5px solid black;
+  border-top: 5px solid royalblue;
+  border-right: 5px solid black;
+  border-left: 5px solid royalblue;
+  }
+  to {
+  box-shadow: 0.5px 0.5px 2px 1px royalblue;
+  transform: scale(1.05);
+  border-bottom: 5px solid royalblue;
+  border-top: 5px solid black;
+  border-right: 5px solid royalblue;
+  border-left: 5px solid black;
+  }
+}
+.login-section h2 {
+  color: royalblue;
+  font-size:34px;
+  
+}
+.login-section p {
+  color:rgba(137, 166, 167, 0.95);
+  font-size:16px;
+  font-family:serif;
+  font-style:italic;
+}
+ .login-section .field input {
+   width:280px;
+   height:40px;
+   font-size:16px;
+   border-radius:10px;
+   outline:none;
+   outline-style:solid;
+   outline-color: rgba(174, 175, 183, 1);
+   outline-width:2px;
+   outline-offset: 3px;
+   border:none;
+   letter-spacing:1px;
+   text-align: center;
+   margin:10px auto;
+   font-style:normal;
+   font-weight:bold;
+   color:rgba(126, 126, 126, 1);
+   background-color:rgba(241, 241, 241, 0.2);
+ }
+  .signup-feature {
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    margin:5px;
+  }
+  .signup-feature a {
+    text-decoration:none;
+    color:royalblue;
+    font-size:18px;
+    font-family: Georgia;
+    font-weight:bold;
+  }
+  .signup-feature p {
+    font-size: 17px;
+    font-family: serif;
+    font-weight: normal;
+  }
+  
+  .login-checkbox {
+    margin:15px 0px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+  }
+  .login-checkbox label {
+    color:rgba(72, 73, 74, 1);
+    margin:0px 0px 0px;
+    font: normal 14px/0.8 none ;
+  }
+  .login-btn {
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin:3px 0px;
+  }
+  .login-btn .btn {
+    padding:15px 40px;
+    border: none;
+    border-radius:20px;
+    font-size:18px;
+    color: white;
+    background-color: royalblue;
+  }

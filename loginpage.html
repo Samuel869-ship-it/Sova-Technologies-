@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Login Page" />
+  <meta name="author" content="Samuel" />
+  <meta name="keywords" content="login page by samuel" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="loginpage.css">
+</head>
+
+<body>
+  <header>
+    <h1>Sova</h1>
+    <div class="sova-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="26" height="26">
+  <path d="M 12.5 4.5 
+           C 12.5 2.5 10.5 1 8 1 
+           C 5 1 3.5 2.5 3.5 4.5 
+           C 3.5 7.5 12.5 6.5 12.5 11.5 
+           C 12.5 13.5 10.5 15 8 15 
+           C 5.5 15 3.5 13.5 3.5 13.5 
+           L 4.5 11.5 
+           C 4.5 11.5 6 12.8 8 12.8 
+           C 9.8 12.8 10.5 11.8 10.5 10.8 
+           C 10.5 8 1.5 9 1.5 4.5 
+           C 1.5 2 4 0 8 0 
+           C 11.5 0 14.5 2.5 14.5 2.5 
+           Z" 
+        fill="#4169E1" />
+        
+</svg>
+
+    </div>
+  </header>
+  <main>
+    <section class="login-section">
+      <h2>Login to Sova  </h2>
+      <p>Login and continue freelancing.</p>
+      <form onsubmit="alert('Login Successful!!!')" action="...." method="post" accept-charset="utf-8">
+       <div class="formset">
+         <div class="field">
+           <input onpaste="return false" autocomplete="on" required type="text" input-mode="alphanumeric" name="login-input" id="num" minlength="11" maxlength="20" placeholder="Enter mobile or email address">
+         </div>
+         <div class="field">
+           <input title="must container" required type="password" minlength="8" maxlength="20" name="login-input" id="form-password" placeholder="Enter your password">
+         </div>
+         <span class="signup-feature">
+           <p style="display:inline-block;">Don't have account?</p>
+           <a href="signuppage.html">Sign up</a>
+           </span>
+         <div class="login-checkbox">
+           <input required type="checkbox" name="mem" id=mem>
+           <label for="mem">I am a member of Sova technologies.</label>
+
+         </div>
+        <div class="login-btn">
+          <button class="btn" type="submit">Login</button>
+        </div>
+       </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
