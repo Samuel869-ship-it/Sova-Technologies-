@@ -1,0 +1,150 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body {
+  background-color:white;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-flow:column nowrap;
+}
+header {
+  margin:10px auto 20px;
+  width:200px;
+  height:70px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.sova-logo {
+  margin:5px 0px 0px 30px;
+  border:2px solid royalblue;
+  border-radius:50%;
+  padding:10px 5px 5px;
+}
+h1 {
+  -webkit-text-stroke: 0.5px black;
+  color: royalblue;
+  font-size:42px;
+  font-style: normal;
+  font-family:Verdana;
+}
+.signup {
+  width:320px;
+  height:720px;
+  border:0px auto 10px;
+  border-bottom:5px solid black;
+  border-top: 5px solid royalblue;
+  border-right: 5px solid black;
+  border-left: 5px solid royalblue;
+  border-radius:20px;
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content:flexstart;
+  align-items:center;
+  gap:10px;
+  padding:10px;
+  background-color: white;
+  animation:scale 1s linear 2s 1 alternate both;
+}
+@keyframes scale {
+  from {
+    transform: scale(1);
+    border-bottom:5px solid black;
+    border-top: 5px solid royalblue;
+    border-right: 5px solid black;
+    border-left: 5px solid royalblue;
+    box-shadow:1px 1px 2px 2px rgba(22, 21, 21, 1);
+  }
+  to {
+    transform:scale(1.02);
+  border-bottom:5px solid royalblue;
+  border-top: 5px solid black;
+  border-right: 5px solid royalblue;
+  border-left: 5px solid black;
+  box-shadow:1px 1px 2px 2px royalblue;
+  }
+}
+
+.signup h2 {
+  font-size:34px;
+  margin:30px auto 5px;
+  color: royalblue;
+  font-family:Verdana;
+}
+.signup .register {
+  font: italic normal 16px/1 serif ;
+  color: rgba(165, 171, 175, 1);
+  margin:0px auto 15px;
+}
+.formset {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:column nowrap;
+}
+.field input{
+  width:290px;
+  height:50px;
+  margin:2px auto 20px;
+  border-radius:20px;
+  background-color:rgba(218, 222, 225, 0.55);
+  border:1px solid rgba(218, 222, 225, 1);
+  outline:none;
+  font:normal bold 16px/1 serif;
+  text-align: center;
+}
+.field select {
+  width:290px;
+  height:50px;
+  margin:2px auto 15px;
+  border-radius:20px;
+  background-color:rgba(218, 222, 225, 0.55);
+  border:1px solid rgba(218, 222, 225, 1);
+  outline:none;
+  font:normal bold 16px/1 serif;
+  text-align: center;
+  color: rgba(124, 125, 126, 1);
+}
+.login-feature {
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin:0px auto 10px;
+}
+.login-feature span {
+  margin:0;
+  line-height:1;
+  font-family:Arial;
+  color:rgba(78, 83, 81, 1);
+  font-size:16px;
+}
+.login-feature a {
+  color:royalblue;
+  text-decoration:none;
+  font: normal bold 16px / 1 serif;
+}
+.condi {
+  display:flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  gap:10px;
+  margin:5px 0px 10px 10px;
+}
+.condi label {
+  margin:1px 0px 0px 0px;
+  font: italic normal 15px/1.2 Georgia;
+}
+.signup-btn button {
+  margin:10px auto 10px;
+  padding:15px 40px;
+  color: white;
+  font: normal normal 18px/1 Verdana ;
+  border: none;
+  border-radius:20px;
+  background-color:royalblue;
+}

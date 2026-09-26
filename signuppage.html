@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="signuppage.css" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Sova</h1>
+        <div class="sova-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="26" height="26">
+  <path d="M 12.5 4.5 
+           C 12.5 2.5 10.5 1 8 1 
+           C 5 1 3.5 2.5 3.5 4.5 
+           C 3.5 7.5 12.5 6.5 12.5 11.5 
+           C 12.5 13.5 10.5 15 8 15 
+           C 5.5 15 3.5 13.5 3.5 13.5 
+           L 4.5 11.5 
+           C 4.5 11.5 6 12.8 8 12.8 
+           C 9.8 12.8 10.5 11.8 10.5 10.8 
+           C 10.5 8 1.5 9 1.5 4.5 
+           C 1.5 2 4 0 8 0 
+           C 11.5 0 14.5 2.5 14.5 2.5 
+           Z" 
+        fill="#4169E1" />
+        
+</svg>
+
+    </div>
+  </header>
+  <main>
+    <section class="signup">
+      <h2>Register to Sova</h2>
+      <p class="register">Register and start freelancing now!</p>
+      <form onsubmit="alert('Registeration Successful!!!')" action="....." method="post" accept-charset="utf-8">
+        <div class="formset">
+          <div class="field">
+            <input required type="text" name="sign-name" id="sign-text" placeholder="Enter your name">
+          </div>
+          <div class="field">
+            <input required type="text" name="sign-age" id="age" minlength="2" maxlength="2"
+            placeholder="Enter your age">
+          </div>
+          <div class="field">
+            <input required type="text" name="sign-num" minlength="11" maxlength="11" id="sign-num" placeholder="Enter your number">
+          </div>
+          <div class="field">
+            <input required type="text" name="sign-country" id="countr" list="country" placeholder="Enter your country">
+            <datalist id="country">
+              <option selected disabled value="Gambia">Gambia</option>
+              <option value="South Africa">South Africa</option>
+              <option value="South Sudan">South Sudan</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="United States">United States</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Romania">Romania</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Germany">Germany</option>
+              <option value="Latvia">Latvia</option>
+              <option value="Hungary">Hungary</option>
+            </datalist>
+          </div>
+          <div class="field">
+            <select name="sign-d-birth" id="birth">
+              <option selected disabled value="Enter month of birth">Enter month of birth</option>
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+            </select>
+          </div>
+          <div class="field">
+            <input type="password" name="signup-pwd" id="pwd" placeholder="Enter your password" minlength="8" maxlength="20">
+          </div>
+          <span class="login-feature">
+            <span>Have an account?</span>
+            <a href="index.html">Login</a>
+          </span>
+          <div class="condi">
+            <input required type="checkbox" name="check" id="sign-check">
+            <label for="sign-check">I agree to Sova's <a style="text-decoration:none; color: royalblue; font:normal bold 17px/0.8 serif;" href="#">terms</a> and <a style="text-decoration:none; color: royalblue; font:normal bold 17px/1 serif; margin:0px 0px 0px 0px" href="#">conditions</a>.</label>
+          </div>
+
+          <div class="signup-btn">
+            <button type="submit">Register</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
